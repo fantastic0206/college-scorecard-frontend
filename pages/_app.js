@@ -1,0 +1,36 @@
+import "antd/dist/reset.css";
+import "react-image-gallery/styles/css/image-gallery.css";
+import "react-dates/lib/css/_datepicker.css";
+import "react-multi-carousel/lib/styles.css";
+import "@glidejs/glide/dist/css/glide.core.min.css";
+// import 'antd/lib/date-picker/style/index.css';
+import { ThemeProvider } from "styled-components";
+import theme from "themes/default.theme";
+import GlobalStyles from "themes/global.style";
+import Layout from "containers/Layout/Layout";
+import AuthProvider from "context/AuthProvider";
+import { SearchProvider } from "context/SearchProvider";
+import store from "../store";
+import { Provider as ReduxProvider } from "react-redux";
+import CombinedThemeProvider from "../CombinedThemeProvider";
+
+function App({ Component, router, pageProps }) {
+  const { query } = router;
+
+  return (
+    <AuthProvider>
+      <SearchProvider query={query}>
+        <ThemeProvider theme={theme}>
+          <ReduxProvider store={store}>
+            <Layout>
+              <GlobalStyles />
+              <Component {...pageProps} />
+            </Layout>
+          </ReduxProvider>
+        </ThemeProvider>
+      </SearchProvider>
+    </AuthProvider>
+  );
+}
+
+export default App;
