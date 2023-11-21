@@ -17,7 +17,7 @@ import {
   ContentWrapper,
   IntroWrapper,
   SchoolDetailArea,
-} from "./SchoolDetailPage.style";
+} from "themes/SchoolDetailPage.style";
 import Container from "components/UI/Container/Container";
 import GlideCarousel, {
   GlideSlide,

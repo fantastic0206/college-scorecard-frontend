@@ -1,6 +1,5 @@
 import { Fragment, useState } from "react";
 import Container from "components/UI/Container/Container";
-import { SearchSchoolPageArea } from "./SearchSchoolPage.style";
 import SearchSchool from "../../containers/SearchPage/SearchSchool/SearchSchool";
 import FieldofStudy from "../../containers/SearchPage/FieldofStudy/FieldofStudy";
 import Text from "components/UI/Text/Text";
