@@ -1,17 +1,17 @@
-###CollegeScorecard Project
+### CollegeScorecard Project
 
-####Overview
+#### Overview
 
 CollegeScorecard is a platform designed to provide detailed information about colleges and universities in the United States. It offers users insights into key metrics such as graduation rates, tuition fees, and post-graduation earnings. The goal of the project is to help students and families make informed decisions about higher education.
 
-####Features
+#### Features
 
 - Search for colleges by name, location, or other criteria.
 - View detailed college profiles, including graduation rates, costs, and employment outcomes.
 - Compare colleges based on key performance indicators.
 - Export data for further analysis.
 
-####Installation
+#### Installation
 
 1. Clone the repository:
 `git clone https://github.com/fantastic0206/college-scorecard-frontend.git`
@@ -32,7 +32,7 @@ Rename the .env.example file to .env and update it with your API keys and other 
 6.Access the application:
 The application will be available at http://localhost:3000.
 
-#####Usage
+##### Usage
 1. Search for Colleges:
     Enter a college name, location, or field of study in the search bar.
     Click on a college name to view its detailed profile.
@@ -45,16 +45,16 @@ The application will be available at http://localhost:3000.
     API Integration
     The project relies on the College Scorecard API provided by the U.S. Department of Education. Make sure to obtain an API key from the official website and update your .env file.
 
-####Contributing
+#### Contributing
 1. Fork the repository.
 2. Create a new branch (git checkout -b feature-branch).
 3. Commit your changes (git commit -m 'Add new feature').
 4. Push to the branch (git push origin feature-branch).
 5. Open a Pull Request.
 
-####License
+#### License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-####Contact
+#### Contact
 For any questions or feedback, please contact the project maintainers:
 - GitHub: github.com/fantastic0206
